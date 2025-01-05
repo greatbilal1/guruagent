@@ -1,0 +1,59 @@
+/* Style for the container of topic and people lists */
+#container {
+    display: flex; /* Make the lists sit side by side */
+    gap: 20px;  /* Space between the lists */
+    margin-bottom: 40px;
+}
+
+/* Style for the introduction window */
+#intro-text {
+    width: 70%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width */
+    margin: 30px auto; /* Center horizontally */
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Add margin to separate from chat box */
+}
+
+/* Style for the chat box */
+#chat-box {
+    width: 70%;
+    max-width: 800px;
+    margin: 30px auto;
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 10px;
+    /* Remove min-height to allow the chat box to expand */
+    /* min-height: 300px; */
+}
+
+/* Make chat messages distinct */
+#chat-box p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+#chat-input-field {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-send-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-send-button:hover {
+    background-color: #3e8e41;
+}
